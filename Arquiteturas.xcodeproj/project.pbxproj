@@ -14,6 +14,11 @@
 		8DA5EB1D298414C500172450 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8DA5EB1B298414C500172450 /* Main.storyboard */; };
 		8DA5EB1F298414C700172450 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8DA5EB1E298414C700172450 /* Assets.xcassets */; };
 		8DA5EB22298414C700172450 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8DA5EB20298414C700172450 /* LaunchScreen.storyboard */; };
+		8DA5EB2F2984421B00172450 /* UserProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DA5EB2E2984421B00172450 /* UserProvider.swift */; };
+		8DA5EB322984429100172450 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DA5EB312984429100172450 /* UserModel.swift */; };
+		8DA5EB35298447F000172450 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DA5EB34298447F000172450 /* Constants.swift */; };
+		8DA5EB3729844E0B00172450 /* UserBusiness.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DA5EB3629844E0B00172450 /* UserBusiness.swift */; };
+		8DA5EB392984546A00172450 /* UserManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DA5EB382984546A00172450 /* UserManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +32,11 @@
 		8DA5EB1E298414C700172450 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8DA5EB21298414C700172450 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8DA5EB23298414C700172450 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8DA5EB2E2984421B00172450 /* UserProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProvider.swift; sourceTree = "<group>"; };
+		8DA5EB312984429100172450 /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
+		8DA5EB34298447F000172450 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		8DA5EB3629844E0B00172450 /* UserBusiness.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserBusiness.swift; sourceTree = "<group>"; };
+		8DA5EB382984546A00172450 /* UserManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserManager.swift; sourceTree = "<group>"; };
 		B78912C03E0056B33DDE220A /* Pods-Arquiteturas.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Arquiteturas.release.xcconfig"; path = "Target Support Files/Pods-Arquiteturas/Pods-Arquiteturas.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -72,6 +82,7 @@
 		8DA5EB14298414C500172450 /* Arquiteturas */ = {
 			isa = PBXGroup;
 			children = (
+				8DA5EB332984473E00172450 /* Infra */,
 				8DA5EB2D29843E8200172450 /* Source */,
 				8DA5EB2929843E5400172450 /* API */,
 				8DA5EB23298414C700172450 /* Info.plist */,
@@ -82,6 +93,7 @@
 		8DA5EB2929843E5400172450 /* API */ = {
 			isa = PBXGroup;
 			children = (
+				8DA5EB302984428300172450 /* Model */,
 				8DA5EB2C29843E6900172450 /* Provider */,
 				8DA5EB2B29843E6300172450 /* Manager */,
 				8DA5EB2A29843E5900172450 /* Business */,
@@ -92,6 +104,7 @@
 		8DA5EB2A29843E5900172450 /* Business */ = {
 			isa = PBXGroup;
 			children = (
+				8DA5EB3629844E0B00172450 /* UserBusiness.swift */,
 			);
 			path = Business;
 			sourceTree = "<group>";
@@ -99,6 +112,7 @@
 		8DA5EB2B29843E6300172450 /* Manager */ = {
 			isa = PBXGroup;
 			children = (
+				8DA5EB382984546A00172450 /* UserManager.swift */,
 			);
 			path = Manager;
 			sourceTree = "<group>";
@@ -106,6 +120,7 @@
 		8DA5EB2C29843E6900172450 /* Provider */ = {
 			isa = PBXGroup;
 			children = (
+				8DA5EB2E2984421B00172450 /* UserProvider.swift */,
 			);
 			path = Provider;
 			sourceTree = "<group>";
@@ -121,6 +136,22 @@
 				8DA5EB20298414C700172450 /* LaunchScreen.storyboard */,
 			);
 			path = Source;
+			sourceTree = "<group>";
+		};
+		8DA5EB302984428300172450 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				8DA5EB312984429100172450 /* UserModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		8DA5EB332984473E00172450 /* Infra */ = {
+			isa = PBXGroup;
+			children = (
+				8DA5EB34298447F000172450 /* Constants.swift */,
+			);
+			path = Infra;
 			sourceTree = "<group>";
 		};
 		C6DC39EF3ADA612BAC0C77EB /* Frameworks */ = {
@@ -249,6 +280,11 @@
 				8DA5EB1A298414C500172450 /* ViewController.swift in Sources */,
 				8DA5EB16298414C500172450 /* AppDelegate.swift in Sources */,
 				8DA5EB18298414C500172450 /* SceneDelegate.swift in Sources */,
+				8DA5EB322984429100172450 /* UserModel.swift in Sources */,
+				8DA5EB2F2984421B00172450 /* UserProvider.swift in Sources */,
+				8DA5EB35298447F000172450 /* Constants.swift in Sources */,
+				8DA5EB392984546A00172450 /* UserManager.swift in Sources */,
+				8DA5EB3729844E0B00172450 /* UserBusiness.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
