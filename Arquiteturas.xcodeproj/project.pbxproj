@@ -10,7 +10,7 @@
 		620F57F99D5223FD5DB350FE /* Pods_Arquiteturas.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 424C9FADA531BAB3C6346574 /* Pods_Arquiteturas.framework */; };
 		8DA5EB16298414C500172450 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DA5EB15298414C500172450 /* AppDelegate.swift */; };
 		8DA5EB18298414C500172450 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DA5EB17298414C500172450 /* SceneDelegate.swift */; };
-		8DA5EB1A298414C500172450 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DA5EB19298414C500172450 /* ViewController.swift */; };
+		8DA5EB1A298414C500172450 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DA5EB19298414C500172450 /* HomeViewController.swift */; };
 		8DA5EB1D298414C500172450 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8DA5EB1B298414C500172450 /* Main.storyboard */; };
 		8DA5EB1F298414C700172450 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8DA5EB1E298414C700172450 /* Assets.xcassets */; };
 		8DA5EB22298414C700172450 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8DA5EB20298414C700172450 /* LaunchScreen.storyboard */; };
@@ -19,6 +19,11 @@
 		8DA5EB35298447F000172450 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DA5EB34298447F000172450 /* Constants.swift */; };
 		8DA5EB3729844E0B00172450 /* UserBusiness.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DA5EB3629844E0B00172450 /* UserBusiness.swift */; };
 		8DA5EB392984546A00172450 /* UserManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DA5EB382984546A00172450 /* UserManager.swift */; };
+		8DAC175429882C08000EC430 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8DAC175329882C08000EC430 /* GoogleService-Info.plist */; };
+		8DAC175729882F8A000EC430 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DAC175629882F8A000EC430 /* LoginViewController.swift */; };
+		8DAC175A298830B4000EC430 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DAC1759298830B4000EC430 /* RegisterViewController.swift */; };
+		8DAC175C298832A8000EC430 /* LoginPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DAC175B298832A8000EC430 /* LoginPresenter.swift */; };
+		8DAC175E29883CBA000EC430 /* RegisterPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DAC175D29883CBA000EC430 /* RegisterPresenter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,7 +32,7 @@
 		8DA5EB12298414C500172450 /* Arquiteturas.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Arquiteturas.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8DA5EB15298414C500172450 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8DA5EB17298414C500172450 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		8DA5EB19298414C500172450 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		8DA5EB19298414C500172450 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		8DA5EB1C298414C500172450 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8DA5EB1E298414C700172450 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8DA5EB21298414C700172450 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -37,6 +42,11 @@
 		8DA5EB34298447F000172450 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		8DA5EB3629844E0B00172450 /* UserBusiness.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserBusiness.swift; sourceTree = "<group>"; };
 		8DA5EB382984546A00172450 /* UserManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserManager.swift; sourceTree = "<group>"; };
+		8DAC175329882C08000EC430 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		8DAC175629882F8A000EC430 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		8DAC1759298830B4000EC430 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		8DAC175B298832A8000EC430 /* LoginPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPresenter.swift; sourceTree = "<group>"; };
+		8DAC175D29883CBA000EC430 /* RegisterPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterPresenter.swift; sourceTree = "<group>"; };
 		B78912C03E0056B33DDE220A /* Pods-Arquiteturas.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Arquiteturas.release.xcconfig"; path = "Target Support Files/Pods-Arquiteturas/Pods-Arquiteturas.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -82,10 +92,11 @@
 		8DA5EB14298414C500172450 /* Arquiteturas */ = {
 			isa = PBXGroup;
 			children = (
-				8DA5EB332984473E00172450 /* Infra */,
 				8DA5EB2D29843E8200172450 /* Source */,
 				8DA5EB2929843E5400172450 /* API */,
+				8DA5EB332984473E00172450 /* Infra */,
 				8DA5EB23298414C700172450 /* Info.plist */,
+				8DAC175329882C08000EC430 /* GoogleService-Info.plist */,
 			);
 			path = Arquiteturas;
 			sourceTree = "<group>";
@@ -128,9 +139,11 @@
 		8DA5EB2D29843E8200172450 /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				8DAC1758298830A8000EC430 /* Register */,
+				8DAC175529882F7A000EC430 /* Login */,
 				8DA5EB15298414C500172450 /* AppDelegate.swift */,
 				8DA5EB17298414C500172450 /* SceneDelegate.swift */,
-				8DA5EB19298414C500172450 /* ViewController.swift */,
+				8DA5EB19298414C500172450 /* HomeViewController.swift */,
 				8DA5EB1B298414C500172450 /* Main.storyboard */,
 				8DA5EB1E298414C700172450 /* Assets.xcassets */,
 				8DA5EB20298414C700172450 /* LaunchScreen.storyboard */,
@@ -152,6 +165,24 @@
 				8DA5EB34298447F000172450 /* Constants.swift */,
 			);
 			path = Infra;
+			sourceTree = "<group>";
+		};
+		8DAC175529882F7A000EC430 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				8DAC175629882F8A000EC430 /* LoginViewController.swift */,
+				8DAC175B298832A8000EC430 /* LoginPresenter.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		8DAC1758298830A8000EC430 /* Register */ = {
+			isa = PBXGroup;
+			children = (
+				8DAC1759298830B4000EC430 /* RegisterViewController.swift */,
+				8DAC175D29883CBA000EC430 /* RegisterPresenter.swift */,
+			);
+			path = Register;
 			sourceTree = "<group>";
 		};
 		C6DC39EF3ADA612BAC0C77EB /* Frameworks */ = {
@@ -223,6 +254,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8DA5EB22298414C700172450 /* LaunchScreen.storyboard in Resources */,
+				8DAC175429882C08000EC430 /* GoogleService-Info.plist in Resources */,
 				8DA5EB1F298414C700172450 /* Assets.xcassets in Resources */,
 				8DA5EB1D298414C500172450 /* Main.storyboard in Resources */,
 			);
@@ -277,10 +309,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8DA5EB1A298414C500172450 /* ViewController.swift in Sources */,
+				8DAC175729882F8A000EC430 /* LoginViewController.swift in Sources */,
+				8DAC175A298830B4000EC430 /* RegisterViewController.swift in Sources */,
+				8DA5EB1A298414C500172450 /* HomeViewController.swift in Sources */,
 				8DA5EB16298414C500172450 /* AppDelegate.swift in Sources */,
+				8DAC175C298832A8000EC430 /* LoginPresenter.swift in Sources */,
 				8DA5EB18298414C500172450 /* SceneDelegate.swift in Sources */,
 				8DA5EB322984429100172450 /* UserModel.swift in Sources */,
+				8DAC175E29883CBA000EC430 /* RegisterPresenter.swift in Sources */,
 				8DA5EB2F2984421B00172450 /* UserProvider.swift in Sources */,
 				8DA5EB35298447F000172450 /* Constants.swift in Sources */,
 				8DA5EB392984546A00172450 /* UserManager.swift in Sources */,
