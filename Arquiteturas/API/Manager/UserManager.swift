@@ -10,11 +10,11 @@ import Foundation
 protocol UserManagerProtocol {
     func register(email: String, password: String,
                   successHandler: @escaping(UserModel) -> (),
-                  failureHandler: @escaping(Error?) -> ())
+                  failureHandler: @escaping(Error) -> ())
     
     func login(email: String, password: String,
                successHandler: @escaping(UserModel) -> (),
-               failureHandler: @escaping(Error?) -> ())
+               failureHandler: @escaping(Error) -> ())
 }
 
 class UserManager: UserManagerProtocol {
@@ -27,7 +27,7 @@ class UserManager: UserManagerProtocol {
     
     func login(email: String, password: String,
                successHandler: @escaping (UserModel) -> (),
-               failureHandler: @escaping (Error?) -> ()) {
+               failureHandler: @escaping (Error) -> ()) {
         
         business.login(email: email, password: password) { result in
             switch result {
@@ -41,7 +41,7 @@ class UserManager: UserManagerProtocol {
     
     func register(email: String, password: String,
                   successHandler: @escaping (UserModel) -> (),
-                  failureHandler: @escaping (Error?) -> ()) {
+                  failureHandler: @escaping (Error) -> ()) {
         
         business.register(email: email, password: password) { result in
             switch result {

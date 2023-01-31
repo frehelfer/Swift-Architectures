@@ -14,7 +14,7 @@ class LoginViewController: UIViewController {
     var onLoginSuccess: (() -> Void)?
 
     // MARK: Properts
-    lazy var loginView: LoginView = {
+    private lazy var loginView: LoginView = {
         let view = LoginView(frame: .zero)
         
         view.onRegisterTap = { [weak self] in
@@ -39,11 +39,14 @@ class LoginViewController: UIViewController {
     }
     
     private func openTap(_ email: String, _ password: String) {
-        let manager = UserManager(business: UserBusiness())
-        manager.login(email: email, password: password) { [weak self] model in
-            self?.onLoginSuccess?()
-        } failureHandler: { [weak self] error in
-            self?.showMessage("Erro", error?.localizedDescription ?? "")
+        let userViewModel = UserViewModel()
+        userViewModel.getUserFromApi(email, password) { [weak self] result in
+            switch result {
+            case .success(_):
+                self?.onLoginSuccess?()
+            case .failure(let error):
+                self?.showMessage("Erro", error.localizedDescription)
+            }
         }
     }
     

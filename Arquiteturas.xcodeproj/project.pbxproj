@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		620F57F99D5223FD5DB350FE /* Pods_Arquiteturas.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 424C9FADA531BAB3C6346574 /* Pods_Arquiteturas.framework */; };
+		8D4C3425298958B50011D411 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D4C3424298958B50011D411 /* HomeViewController.swift */; };
+		8D4C3427298961DD0011D411 /* RegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D4C3426298961DD0011D411 /* RegisterView.swift */; };
+		8D4C3429298993360011D411 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D4C3428298993360011D411 /* HomeView.swift */; };
 		8DA5EB16298414C500172450 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DA5EB15298414C500172450 /* AppDelegate.swift */; };
 		8DA5EB18298414C500172450 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DA5EB17298414C500172450 /* SceneDelegate.swift */; };
 		8DA5EB1A298414C500172450 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DA5EB19298414C500172450 /* ViewController.swift */; };
@@ -28,11 +31,15 @@
 		8DAC177129886298000EC430 /* RegisterCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DAC177029886298000EC430 /* RegisterCoordinator.swift */; };
 		8DAC177429886323000EC430 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DAC177329886323000EC430 /* RegisterViewController.swift */; };
 		8DAC177629886C15000EC430 /* HomeCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DAC177529886C15000EC430 /* HomeCoordinator.swift */; };
+		8DAC1779298952D3000EC430 /* UserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DAC1778298952D3000EC430 /* UserViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		424C9FADA531BAB3C6346574 /* Pods_Arquiteturas.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Arquiteturas.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		768D61006A77A132DE5BB989 /* Pods-Arquiteturas.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Arquiteturas.debug.xcconfig"; path = "Target Support Files/Pods-Arquiteturas/Pods-Arquiteturas.debug.xcconfig"; sourceTree = "<group>"; };
+		8D4C3424298958B50011D411 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		8D4C3426298961DD0011D411 /* RegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterView.swift; sourceTree = "<group>"; };
+		8D4C3428298993360011D411 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		8DA5EB12298414C500172450 /* Arquiteturas.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Arquiteturas.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8DA5EB15298414C500172450 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8DA5EB17298414C500172450 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -55,6 +62,7 @@
 		8DAC177029886298000EC430 /* RegisterCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterCoordinator.swift; sourceTree = "<group>"; };
 		8DAC177329886323000EC430 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		8DAC177529886C15000EC430 /* HomeCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCoordinator.swift; sourceTree = "<group>"; };
+		8DAC1778298952D3000EC430 /* UserViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewModel.swift; sourceTree = "<group>"; };
 		B78912C03E0056B33DDE220A /* Pods-Arquiteturas.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Arquiteturas.release.xcconfig"; path = "Target Support Files/Pods-Arquiteturas/Pods-Arquiteturas.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -79,6 +87,15 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		8D4C3421298957920011D411 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				8D4C3424298958B50011D411 /* HomeViewController.swift */,
+				8D4C3428298993360011D411 /* HomeView.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
 		8DA5EB09298414C500172450 = {
 			isa = PBXGroup;
 			children = (
@@ -100,13 +117,14 @@
 		8DA5EB14298414C500172450 /* Arquiteturas */ = {
 			isa = PBXGroup;
 			children = (
-				8DAC176829884B5F000EC430 /* Controllers */,
-				8DA5EB2D29843E8200172450 /* Source */,
+				8DAC175F29884680000EC430 /* GoogleService-Info.plist */,
+				8DA5EB23298414C700172450 /* Info.plist */,
 				8DA5EB2929843E5400172450 /* API */,
+				8DAC176829884B5F000EC430 /* Controllers */,
 				8DAC17612988477E000EC430 /* Coordinator */,
 				8DA5EB332984473E00172450 /* Infra */,
-				8DA5EB23298414C700172450 /* Info.plist */,
-				8DAC175F29884680000EC430 /* GoogleService-Info.plist */,
+				8DA5EB2D29843E8200172450 /* Source */,
+				8DAC17772989529C000EC430 /* View model */,
 			);
 			path = Arquiteturas;
 			sourceTree = "<group>";
@@ -190,6 +208,7 @@
 		8DAC176829884B5F000EC430 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				8D4C3421298957920011D411 /* Home */,
 				8DAC177229886314000EC430 /* Register */,
 				8DAC176929884B6D000EC430 /* Login */,
 			);
@@ -209,8 +228,17 @@
 			isa = PBXGroup;
 			children = (
 				8DAC177329886323000EC430 /* RegisterViewController.swift */,
+				8D4C3426298961DD0011D411 /* RegisterView.swift */,
 			);
 			path = Register;
+			sourceTree = "<group>";
+		};
+		8DAC17772989529C000EC430 /* View model */ = {
+			isa = PBXGroup;
+			children = (
+				8DAC1778298952D3000EC430 /* UserViewModel.swift */,
+			);
+			path = "View model";
 			sourceTree = "<group>";
 		};
 		C6DC39EF3ADA612BAC0C77EB /* Frameworks */ = {
@@ -337,17 +365,21 @@
 			buildActionMask = 2147483647;
 			files = (
 				8DAC176B29884B7A000EC430 /* LoginViewController.swift in Sources */,
+				8D4C3427298961DD0011D411 /* RegisterView.swift in Sources */,
 				8DA5EB1A298414C500172450 /* ViewController.swift in Sources */,
+				8D4C3425298958B50011D411 /* HomeViewController.swift in Sources */,
 				8DA5EB16298414C500172450 /* AppDelegate.swift in Sources */,
 				8DAC177629886C15000EC430 /* HomeCoordinator.swift in Sources */,
 				8DAC176529884977000EC430 /* LoginCoordinator.swift in Sources */,
 				8DA5EB18298414C500172450 /* SceneDelegate.swift in Sources */,
 				8DAC176729884A33000EC430 /* UIColor+.swift in Sources */,
+				8DAC1779298952D3000EC430 /* UserViewModel.swift in Sources */,
 				8DA5EB322984429100172450 /* UserModel.swift in Sources */,
 				8DA5EB2F2984421B00172450 /* UserProvider.swift in Sources */,
 				8DA5EB35298447F000172450 /* Constants.swift in Sources */,
 				8DAC176F29885B8B000EC430 /* UITextField+.swift in Sources */,
 				8DA5EB392984546A00172450 /* UserManager.swift in Sources */,
+				8D4C3429298993360011D411 /* HomeView.swift in Sources */,
 				8DAC177429886323000EC430 /* RegisterViewController.swift in Sources */,
 				8DAC176D29885623000EC430 /* LoginView.swift in Sources */,
 				8DA5EB3729844E0B00172450 /* UserBusiness.swift in Sources */,
